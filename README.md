@@ -7,7 +7,7 @@ Avec ce nouveau chemin le logiciel va appeler la fonction LoopAllSubFolders() qu
 
 La fonction Docsearch() est divisée en 3 étapes. Dans un premier temps la fonction va ouvrir le document sélectionné avec Word. Une fois le document ouvert il va chercher puis remplacer les termes appropriés, avant de sauvegarder le document édité. La fonction CloseWordDocuments() sera ensuite lancé afin de fermer toute instance du programme Word. Cette étape est nécessaire pour ne pas ouvrir une multitude de fois le même logiciel. Une fois cette fonction finie, le logiciel passera au prochain fichier qu’il a trouvé , jusqu’à ce qu’il n’en trouve plus.
 
-Finalement, une fois que tous les documents auront été traités, le logiciel ouvrira une fenêtre indiquant à l’utilisateur qu’il a fini. 
+Finalement, une fois que tous les documents auront été traités, le logiciel ouvrira une fenêtre indiquant à l’utilisateur que la recherche est finie. 
 
 ## Limites et améliorations possibles
 S’il devait y avoir une deuxième version du logiciel la première chose à faire serait de faire une recherche intelligente des termes à rechercher. En effet, actuellement le logiciel cherche exactement le terme demandé, c’est-à-dire que si un utilisateur commet une erreur de frappe le logiciel ne reconnaitra pas le terme.  Il faudrait donc intégrer une recherche intelligente (aussi connu comme « fuzzy search ») capable de comprendre que si un terme ressemble à 90% au terme recherché,  il faut les considérer comme valable.
