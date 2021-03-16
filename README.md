@@ -1,4 +1,6 @@
 # VBA-Find-Replace
+Ceci projet est un macro vba capable de chercher et remplacer des termes spécifiés dans une serie de documents. Le format vba permet de lancer le programme sans avoir besoin d'installer des librairies externes ou autre. 
+
 
 ## Fonctionnement
 Une fois le logiciel lancé par le bouton sur la première page, le logiciel va d’abord sélectionner les données sur les deux colonnes, nettoyer ces données, puis les lier dans un tableau. Ensuite,  la fonction GetFolder() sera lancée et permet d’ouvrir une fenêtre permettant à l’utilisateur de choisir le dossier qu’il veut traiter. Cette fonction va donc stocker le chemin depuis la base de l’ordinateur jusqu’au dossier sélectionné. 
@@ -21,8 +23,8 @@ Finalement, nous pourrions également envisager de réunir les deux logiciels cr
 
 ## Répertoire Documents
 
-Une fois les documents traités, il fallait un moyen de les répertorier facilement. Il serait possible de créer un tableau regroupant tous les fichiers manuellement mais cela prendrait beaucoup de temps. J’ai donc décidé de reprendre ce que j’ai appris pour le premier logiciel et créer un deuxième logiciel qui permette de créer une liste des fichiers à partir d’un dossier et sous dossiers. 
+Une fois les documents traités, il fallait un moyen de les répertorier facilement. Il serait possible de créer un tableau regroupant tous les fichiers manuellement mais cela prendrait beaucoup de temps.
 
-En développant le premier logiciel avec une base de plusieurs fonctions séparées, j’ai pu reprendre certaines de ces fonctions pour développer ce deuxième logiciel. En effet les fonctionnalités permettant d’ouvrir une fenêtre pour que l’utilisateur indique le dossier à traiter ainsi que la boucle permettant de traiter tous les fichiers d’un dossier, ont pu être reprises pour ce projet. La seule grande différence est la fonction HyperlinkFileListing() qui permet de parcourir les différents fichiers et les répertorier sur la première colonne de la feuille Excel. Il crée également un lien menant directement vers le fichier. 
+En développant le premier logiciel avec une base de plusieurs fonctions séparées, nous avons pu reprendre certaines sections afin développer ce deuxième Macro. En effet les fonctionnalités permettant d’ouvrir une fenêtre pour que l’utilisateur indique le dossier à traiter ainsi que la boucle permettant de traiter tous les fichiers d’un dossier, ont pu être reprises pour ce projet. La seule grande différence est la fonction HyperlinkFileListing() qui permet de parcourir les différents fichiers et les répertorier sur la première colonne de la feuille Excel. Il crée également un lien menant directement vers le fichier. 
 
-Ne voulant pas que ce logiciel soit uniquement utilisable pour ce projet j’ai pris la décision d’énumérer les fichiers sur la première colonne et non de les trier immédiatement. En effet, cela permet de reprendre ce logiciel afin de répertorier toute sorte de fichiers pour différents projets et fichiers qui n’auraient pas le même format de nomenclature. Par conséquent, cette dernière étape de répartition des documents dans un tableau à été faite à la main. 
+Ne voulant pas que ce logiciel soit uniquement utilisable pour ce projet une décision fut prise d’énumérer les fichiers sur la première colonne contrairement à les répertorier par le contenu du titre du fichier. En effet, cela permet de reprendre ce logiciel afin de répertorier toute sorte de fichiers pour différents projets et fichiers qui n’auraient pas le même format de nomenclature. Par conséquent, cette dernière étape de répartition des documents dans un tableau à été faite à la main. 
