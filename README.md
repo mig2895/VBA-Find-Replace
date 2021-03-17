@@ -1,5 +1,5 @@
 # VBA-Find-Replace
-Ceci projet est un macro vba capable de chercher et remplacer des termes spécifiés dans une serie de documents. Le format vba permet de lancer le programme sans avoir besoin d'installer des librairies externes ou autre. 
+Ce projet est une macro VBA capable de chercher et remplacer des termes spécifiés dans une serie de documents. Le format vba permet de lancer le programme sans avoir besoin d'installer des librairies externes ou autre. 
 
 
 ## Fonctionnement
@@ -29,4 +29,4 @@ En développant le premier logiciel avec une base de plusieurs fonctions sépar�
 
 Ne voulant pas que ce logiciel soit uniquement utilisable pour ce projet une décision fut prise d’énumérer les fichiers sur la première colonne contrairement à les répertorier par le contenu du titre du fichier. En effet, cela permet de reprendre ce logiciel afin de répertorier toute sorte de fichiers pour différents projets et fichiers qui n’auraient pas le même format de nomenclature. Par conséquent, cette dernière étape de répartition des documents dans un tableau à été faite à la main. 
 
-Le logiciel a été développé par Miguel de Bruyne dans le cadre du projet FNS SPAR, Open Education for Research Methodology Teaching across the Mediterranean, http://p3.snf.ch/project-190634
+Le logiciel a été développé par Miguel de Bruyne dans le cadre du projet FNS SPARK, Open Education for Research Methodology Teaching across the Mediterranean, http://p3.snf.ch/project-190634
