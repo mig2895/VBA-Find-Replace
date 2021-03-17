@@ -1,4 +1,4 @@
-'Le logiciel a été développé par Miguel de Bruyne dans le cadre du projet FNS SPAR, Open Education for Research Methodology Teaching across the Mediterranean, http://p3.snf.ch/project-190634
+'Le logiciel a été développé par Miguel de Bruyne dans le cadre du projet FNS SPARK, Open Education for Research Methodology Teaching across the Mediterranean, http://p3.snf.ch/project-190634
 Option Compare Text
 Public combinedArr As Variant
  Global j As Integer
