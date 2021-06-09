@@ -12,8 +12,10 @@ Sub Starting()
     
     'Création d'un tableau à partir des colonnes A et B.
     'Le logiciel sait exactement quand arreter la recherche.
+    Dim sheetName
+    sheetName = ActiveSheet.Name
     
-    With Sheets("Sheet1")
+    With Sheets(sheetName)
     LastRow = .Range("A" & .Rows.Count).End(xlUp).Row
     For i = 2 To LastRow
         .Cells(i, "A").Value = Trim(.Cells(i, "A").Value)
@@ -95,13 +97,13 @@ End Sub
 
 Sub docSearch(ByVal FullDocumentPath As String)
     'Cette fonction va permettre d'ouvrir un document word, chercher les mots qui sont sur la liste des mots
-    ' à chercher, remplacera les mots par l'autre liste, sauvegardera le fichier, puis le fermera.
+    'à chercher, remplacera les mots par l'autre liste, sauvegardera le fichier, puis le fermera.
     Dim wdApp As Word.Application
     Dim wdDoc As Word.Document
     Dim wdRng As Word.Range
     
-    
-    With Sheets("Sheet1")
+    sheetName = ActiveSheet.Name
+    With Sheets(sheetName)
     LastRow = .Range("A" & .Rows.Count).End(xlUp).Row
     End With
     
@@ -122,7 +124,7 @@ Sub docSearch(ByVal FullDocumentPath As String)
                     .Forward = True
                     .Wrap = wdFindContinue
                     .MatchWholeWord = True
-                    .Execute replace:=wdReplaceAll
+                    .Execute Replace:=wdReplaceAll
                 End With
         End If
         Next i
@@ -173,7 +175,7 @@ Sub ListLoop()
     Dim sItem As String
     Set fldr = Application.FileDialog(msoFileDialogFolderPicker)
     With fldr
-        .Title = "Veuillez sélectionner le dossier contenant les fichiers à pseudomiser"
+        .Title = "Veuillez sÃ©lectionner le dossier contenant les fichiers Ã  pseudomiser"
         .AllowMultiSelect = False
         .InitialFileName = Application.DefaultFilePath
         If .Show <> -1 Then GoTo NextCode
