@@ -9,7 +9,27 @@ Avec ce nouveau chemin le logiciel va appeler la fonction LoopAllSubFolders() qu
 
 La fonction Docsearch() est divisée en 3 étapes. Dans un premier temps la fonction va ouvrir le document sélectionné avec Word. Une fois le document ouvert il va chercher puis remplacer les termes appropriés, avant de sauvegarder le document édité. La fonction CloseWordDocuments() sera ensuite lancé afin de fermer toute instance du programme Word. Cette étape est nécessaire pour ne pas ouvrir une multitude de fois le même logiciel. Une fois cette fonction finie, le logiciel passera au prochain fichier qu’il a trouvé , jusqu’à ce qu’il n’en trouve plus.
 
-Finalement, une fois que tous les documents auront été traités, le logiciel ouvrira une fenêtre indiquant à l’utilisateur que la recherche est finie. 
+Finalement, une fois que tous les documents auront été traités, le logiciel ouvrira une fenêtre indiquant à l’utilisateur que la recherche est finie.
+
+## Installation
+
+l'utilisation de cet outil requiert une licence Microsoft Office.
+
+
+ 1.  Ouvrez Excel
+
+ 2. Appuyez sur les boutons Alt + F11 afin d'ouvrir "Visual Basic Editor". 
+
+ 3. Faites glisser le fichier "findAndReplace2.vba" sur le menu lateral de Visual Basic. Ou copiez/collez le code dans un nouveau module. 
+
+ 4. Sous "outils" -> "Références" ajoutez les références suivantes : 
+     - Microsoft Word 16.0
+     - Microsoft VBScript Regular Expressions
+     - Microsoft Scripting Runtime
+
+  5. Sélectionnez l'onglet "Affichage" -> "Macros" ->"Starting" afin de lancer le script. 
+
+NB : L'outil cherche et remplace les mots sur les colonnes A et B à partie des cellules 2. 
 
 ## Limites et améliorations possibles
 S’il devait y avoir une deuxième version du logiciel la première chose à faire serait de faire une recherche intelligente des termes à rechercher. En effet, actuellement le logiciel cherche exactement le terme demandé, c’est-à-dire que si un utilisateur commet une erreur de frappe le logiciel ne reconnaitra pas le terme.  Il faudrait donc intégrer une recherche intelligente (aussi connu comme « fuzzy search ») capable de comprendre que si un terme ressemble à 90% au terme recherché,  il faut les considérer comme valable.
